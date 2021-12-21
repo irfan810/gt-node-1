@@ -1,0 +1,15 @@
+{
+  "name": "gt-backend",
+  "version": "1.0.0",
+  "description": "gt backend for sharing session",
+  "main": "app.js",
+  "dependencies": {
+    "fastify": "^3.21.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anjar Fiandrianto"
+}
