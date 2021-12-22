@@ -15,7 +15,7 @@ fastify.get('/', async (request, reply) => {
 
 fastify.get('/host', async (request, reply) => {
   let os = require("os");
-  return { hello: os.hostname() }
+  return { hostname: os.hostname() }
 })
 
 
