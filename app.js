@@ -4,6 +4,7 @@ var apm = require('elastic-apm-node').start({
   // Set custom APM Server URL (default: http://localhost:8200)
   serverUrl: 'http://188.166.242.21:30337',
 })
+var sleep = require('sleep');
 
 // Require the framework and instantiate it
 const fastify = require('fastify')({ logger: true })
@@ -16,6 +17,11 @@ fastify.get('/', async (request, reply) => {
 fastify.get('/host', async (request, reply) => {
   let os = require("os");
   return { hostname: os.hostname() }
+})
+
+fastify.get('/sleep', async (request, reply) => {
+  sleep.sleep(10)
+  return { sleep_done: true }
 })
 
 
