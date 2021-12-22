@@ -10,6 +10,10 @@ const fastify = require('fastify')({ logger: true })
 
 // Declare a route
 fastify.get('/', async (request, reply) => {
+  return { hello: 'world' }
+})
+
+fastify.get('/host', async (request, reply) => {
   let os = require("os");
   return { hello: os.hostname() }
 })
