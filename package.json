@@ -1,10 +1,11 @@
 {
-  "name": "gt-backend",
+  "name": "gt-node",
   "version": "1.0.0",
   "description": "gt backend for sharing session",
   "main": "app.js",
   "dependencies": {
-    "fastify": "^3.21.0"
+    "fastify": "^3.21.0",
+    "elastic-apm-node": "3.26.0"
   },
   "devDependencies": {},
   "scripts": {
