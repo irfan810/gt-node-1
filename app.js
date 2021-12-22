@@ -1,3 +1,10 @@
+var apm = require('elastic-apm-node').start({
+  serviceName: 'gt-node',
+  
+  // Set custom APM Server URL (default: http://localhost:8200)
+  serverUrl: 'http://188.166.242.21:30337',
+})
+
 // Require the framework and instantiate it
 const fastify = require('fastify')({ logger: true })
 
